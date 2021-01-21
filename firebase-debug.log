@@ -1,0 +1,147 @@
+[debug] [2021-01-21T10:29:12.474Z] ----------------------------------------------------------------------
+[debug] [2021-01-21T10:29:12.480Z] Command:       G:\node.js\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-21T10:29:12.481Z] CLI Version:   9.2.1
+[debug] [2021-01-21T10:29:12.481Z] Platform:      win32
+[debug] [2021-01-21T10:29:12.482Z] Node Version:  v12.16.0
+[debug] [2021-01-21T10:29:12.484Z] Time:          Thu Jan 21 2021 15:59:12 GMT+0530 (India Standard Time)
+[debug] [2021-01-21T10:29:12.485Z] ----------------------------------------------------------------------
+[debug] [2021-01-21T10:29:12.485Z] 
+[debug] [2021-01-21T10:29:12.510Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-21T10:29:12.511Z] > authorizing via signed-in user
+[debug] [2021-01-21T10:29:12.512Z] [iam] checking project ehi-assignment for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-21T10:29:12.573Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-21T10:29:12.574Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-21T10:29:23.172Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 21 Jan 2021 10:29:13 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:23.277Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ehi-assignment:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-21T10:29:24.984Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 21 Jan 2021 10:29:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1404","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:24.988Z] > refreshing access token with scopes: []
+[debug] [2021-01-21T10:29:24.988Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-21T10:29:26.168Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 21 Jan 2021 10:29:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:26.335Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ehi-assignment [none]
+[debug] [2021-01-21T10:29:26.857Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ehi-assignment 200
+[debug] [2021-01-21T10:29:26.857Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ehi-assignment {"projectId":"ehi-assignment","projectNumber":"412417937054","displayName":"ehi-assignment","name":"projects/ehi-assignment","resources":{"hostingSite":"ehi-assignment"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ehi-assignment'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-01-21T10:29:26.865Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-21T10:29:26.866Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-21T10:29:28.032Z] <<< HTTP RESPONSE 200 {"date":"Thu, 21 Jan 2021 10:29:27 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:28.099Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-01-21T10:29:30.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 21 Jan 2021 10:29:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ehi-assignment]: beginning deploy... 
+[info] i  hosting[ehi-assignment]: found 12 files in dist/contact-application 
+[debug] [2021-01-21T10:29:30.996Z] [hosting] hash cache [ZGlzdFxjb250YWN0LWFwcGxpY2F0aW9u] not populated
+[debug] [2021-01-21T10:29:31.196Z] > refreshing access token with scopes: []
+[debug] [2021-01-21T10:29:31.197Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-21T10:29:31.245Z] [hosting] hash cache [ZGlzdFxjb250YWN0LWFwcGxpY2F0aW9u] stored for 12 files
+[debug] [2021-01-21T10:29:31.246Z] [hosting][hash queue][FINAL] {"max":156,"min":107,"avg":136.16666666666666,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":249}
+[debug] [2021-01-21T10:29:32.379Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 21 Jan 2021 10:29:32 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:32.440Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions/52235a060168ad70:populateFiles [none]
+[debug] [2021-01-21T10:29:32.440Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions/52235a060168ad70:populateFiles {"files":{"/3rdpartylicenses.txt":"74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31","/index.html":"78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7","/runtime.0e49e2b53282f40c8925.js":"8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29","/favicon.ico":"2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7","/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff":"5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6","/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf":"6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707","/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2":"0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5","/glyphicons-halflings-regular.5be1347c682810f199c7.eot":"ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb","/polyfills.8c151b8375e767ff858f.js":"e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73","/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg":"7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184","/styles.3d27849da7887ba96395.css":"96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120","/main.bc05f5e9fde5d2b92bda.js":"4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086"}}
+[info] i  hosting: adding files to version [0/12] (0%) 
+[debug] [2021-01-21T10:29:33.158Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions/52235a060168ad70:populateFiles 200
+[debug] [2021-01-21T10:29:33.158Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions/52235a060168ad70:populateFiles {"uploadRequiredHashes":["2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7","5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6","ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb","8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29","0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5","7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184","96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120","4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086","74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31","78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7","e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73","6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files"}
+[debug] [2021-01-21T10:29:33.173Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7 [none]
+[debug] [2021-01-21T10:29:33.173Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7 [stream]
+[debug] [2021-01-21T10:29:33.175Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6 [none]
+[debug] [2021-01-21T10:29:33.175Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6 [stream]
+[debug] [2021-01-21T10:29:33.177Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb [none]
+[debug] [2021-01-21T10:29:33.178Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb [stream]
+[debug] [2021-01-21T10:29:33.180Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29 [none]
+[debug] [2021-01-21T10:29:33.180Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29 [stream]
+[debug] [2021-01-21T10:29:33.182Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5 [none]
+[debug] [2021-01-21T10:29:33.182Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5 [stream]
+[debug] [2021-01-21T10:29:33.184Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184 [none]
+[debug] [2021-01-21T10:29:33.184Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184 [stream]
+[debug] [2021-01-21T10:29:33.186Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120 [none]
+[debug] [2021-01-21T10:29:33.186Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120 [stream]
+[debug] [2021-01-21T10:29:33.188Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086 [none]
+[debug] [2021-01-21T10:29:33.188Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086 [stream]
+[debug] [2021-01-21T10:29:33.190Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31 [none]
+[debug] [2021-01-21T10:29:33.190Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31 [stream]
+[debug] [2021-01-21T10:29:33.192Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7 [none]
+[debug] [2021-01-21T10:29:33.192Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7 [stream]
+[debug] [2021-01-21T10:29:33.195Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73 [none]
+[debug] [2021-01-21T10:29:33.195Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73 [stream]
+[debug] [2021-01-21T10:29:33.197Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707 [none]
+[debug] [2021-01-21T10:29:33.197Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707 [stream]
+[debug] [2021-01-21T10:29:33.206Z] [hosting][populate queue][FINAL] {"max":1976,"min":1976,"avg":1976,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2010}
+[debug] [2021-01-21T10:29:33.206Z] [hosting] uploads queued: 12
+[info] i  hosting: uploading new files [0/12] (0%) 
+[debug] [2021-01-21T10:29:35.890Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73 200
+[debug] [2021-01-21T10:29:35.890Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/e323cea9bc1c58651e4b1ee5ffbb4362e270e4b11ed2390bee9e3b88394b4b73 [stream]
+[debug] [2021-01-21T10:29:35.925Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7 200
+[debug] [2021-01-21T10:29:35.926Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/78fe446f0078a9ad1979e1c8e4d6c4af045a97fa87467960b4659ded4daaf8d7 [stream]
+[debug] [2021-01-21T10:29:35.952Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31 200
+[debug] [2021-01-21T10:29:35.953Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/74b9fc24235adca2266767828b372bd411b45abe2636c63d4671f3ebd9617c31 [stream]
+[debug] [2021-01-21T10:29:36.106Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb 200
+[debug] [2021-01-21T10:29:36.107Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/ea8dc7fb0dcea3d5190acd81e18d27789cae28d533458579658427c519c314fb [stream]
+[debug] [2021-01-21T10:29:36.197Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5 200
+[debug] [2021-01-21T10:29:36.198Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/0561bd0dc33b73a085698d914614f7320f434be3640303c56e344af35e1842c5 [stream]
+[debug] [2021-01-21T10:29:36.225Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120 200
+[debug] [2021-01-21T10:29:36.225Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/96a94e16fc8f79a8ed4ebeab92863280255cc053b0bacddd2e2a6418196e0120 [stream]
+[debug] [2021-01-21T10:29:36.233Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6 200
+[debug] [2021-01-21T10:29:36.233Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/5545c2bc0e53a582f6817f523b385ccf917c6ff12d5c55bcd9c2ca52666315a6 [stream]
+[debug] [2021-01-21T10:29:36.370Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086 200
+[debug] [2021-01-21T10:29:36.370Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/4479e34fd120bfc361c159b5999a89114c818722b6a997e47701babc54cf9086 [stream]
+[debug] [2021-01-21T10:29:36.542Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7 200
+[debug] [2021-01-21T10:29:36.543Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7 [stream]
+[info] i  hosting: uploading new files [9/12] (75%) 
+[debug] [2021-01-21T10:29:37.193Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707 200
+[debug] [2021-01-21T10:29:37.193Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/6e0bd43454180016d5d1f4fc274618fc343593cfa33892858caf5057e3364707 [stream]
+[debug] [2021-01-21T10:29:37.197Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184 200
+[debug] [2021-01-21T10:29:37.198Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/7d3e7f391c6375ce5e896afb31db29910558d35a469411c21331b6c571826184 [stream]
+[debug] [2021-01-21T10:29:37.224Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29 200
+[debug] [2021-01-21T10:29:37.225Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ehi-assignment/versions/52235a060168ad70/files/8351e28e6622d0d4825d766649b2ae0e8767c34304fff594f102bfe52b7e4e29 [stream]
+[debug] [2021-01-21T10:29:37.226Z] [hosting][upload queue][FINAL] {"max":4060,"min":2720,"avg":3255,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":4067}
+[info] +  hosting[ehi-assignment]: file upload complete 
+[debug] [2021-01-21T10:29:37.228Z] [hosting] deploy completed after 6277ms
+[debug] [2021-01-21T10:29:39.123Z] [
+  {
+    "config": {
+      "public": "dist/contact-application",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "ehi-assignment"
+    },
+    "site": "ehi-assignment",
+    "version": "sites/ehi-assignment/versions/52235a060168ad70"
+  }
+]
+[info] i  hosting[ehi-assignment]: finalizing version... 
+[debug] [2021-01-21T10:29:39.126Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-21T10:29:39.126Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-21T10:29:40.604Z] <<< HTTP RESPONSE 200 {"date":"Thu, 21 Jan 2021 10:29:40 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:40.688Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/versions/52235a060168ad70?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-01-21T10:29:43.394Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 21 Jan 2021 10:29:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:43.396Z] [hosting] finalized version for ehi-assignment: {"name":"sites/ehi-assignment/versions/52235a060168ad70","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-01-21T10:29:30.278363Z","createUser":{"email":"madhushinde333@gmail.com"},"finalizeTime":"2021-01-21T10:29:43.062389Z","finalizeUser":{"email":"madhushinde333@gmail.com"}}
+[info] +  hosting[ehi-assignment]: version finalized 
+[info] i  hosting[ehi-assignment]: releasing new version... 
+[debug] [2021-01-21T10:29:43.400Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ehi-assignment/releases?version_name=sites/ehi-assignment/versions/52235a060168ad70  
+ {"message":null}
+[debug] [2021-01-21T10:29:45.841Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 21 Jan 2021 10:29:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-21T10:29:45.842Z] [hosting] release: {"name":"sites/ehi-assignment/releases/1611224984896717","version":{"name":"sites/ehi-assignment/versions/52235a060168ad70","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-01-21T10:29:30.278363Z","createUser":{"email":"madhushinde333@gmail.com"},"finalizeTime":"2021-01-21T10:29:43.062389Z","finalizeUser":{"email":"madhushinde333@gmail.com"},"preview":{}},"type":"DEPLOY","releaseTime":"2021-01-21T10:29:44.896717496Z","releaseUser":{"email":"madhushinde333@gmail.com"}}
+[info] +  hosting[ehi-assignment]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/ehi-assignment/overview
+[info] Hosting URL: https://ehi-assignment.web.app
